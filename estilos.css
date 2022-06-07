@@ -37,7 +37,7 @@ nav a{
 }
 
 nav {
-    background-color: black;
+    background-image: linear-gradient(to bottom, black 90%, #525252)
 }
 
 body {
@@ -49,7 +49,7 @@ body {
 section {
     padding-top: 25px;
     padding-left: 25px;
-    background-color: #525252;
+    background-image: linear-gradient(to bottom, #525252 85%, black);
 }
 
 .indexSpanFlex {
@@ -58,7 +58,34 @@ section {
     justify-content: center;
     font-size: 16px;
     padding-left: 70px;
-    background-color: #525252;
+    background-image: linear-gradient(to bottom, #525252 85%, black);
+}
+
+.transicionNav {
+    transition: all 1s;
+}
+
+.transicionNav:hover {
+    transform:scale(1.12);
+    background-color: white;
+    border-left: solid #CA3E47 7px;
+    padding-right: 5px;
+}
+
+footer {
+    grid-area: pie;
+    font-size: 10px;
+    color:white;
+    background-color: black;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.flexFooter {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .indexFlex {
@@ -110,24 +137,8 @@ section {
 
 #productos {
     grid-area: productos;
-    background-color: #525252;
+    background-image: linear-gradient(to bottom, #525252 85%, black);
     padding-top: 25px;
-}
-
-footer {
-    grid-area: pie;
-    font-size: 10px;
-    color:white;
-    background-color: black;
-    padding: 5px;
-    padding-top: 20px;
-}
-
-.flexFooter {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
 }
 
 .gridProductos {
@@ -189,7 +200,7 @@ section h3, article h3 {
     align-items: center;
 }
 
-section p {;
+section p {
     font-size: 20px;
     padding: 5px;
 }
